@@ -36,6 +36,7 @@ public class ContainsDuplicate
     static boolean containsDuplicate3(int[] nums)
     {
         Map<Integer, String> numbers = new HashMap<>();
+        numbers.keySet();
         for (int num : nums)
         {
             if (numbers.put(num, "PRESENT") != null) return true;
